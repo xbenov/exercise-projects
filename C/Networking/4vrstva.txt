@@ -1,0 +1,7 @@
+http 80
+https 443
+telnet 23
+ssh 22
+ftp-control 21
+ftp-data 20
+tftp 69
