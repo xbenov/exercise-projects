@@ -33,7 +33,7 @@ def ex2():
     '''
     out = "Current-> {} | Previous-> {} | Sum-> {}"
     for n in range(10):
-        print(out.format(n, n if n<1 else n-1,n+ (n if n<1 else n-1)))
+        print(f"Current-> {n} | Previous-> {n if n<1 else n-1} | Sum-> {n+ (n if n<1 else n-1)}")
 
 #ex2()
 
@@ -112,9 +112,9 @@ def ex9(n):
         n = n//10
     
     if o_n == rev_n:
-        print("Number " +str(o_n)+ " is palindrome")
+        print(f"Number {o_n} is palindrome")
     else:
-        print("Number " +str(o_n)+ " is not palindrome")
+        print(f"Number {o_n} is not palindrome")
 
 #ex9(125)
 
@@ -124,8 +124,7 @@ def ex10(list_o,list_e):
     '''
     odds = [n for n in list_o if n%2 == 1]
     evens = [n for n in list_e if n%2 == 0]
-    new_list = odds + evens
-    print(new_list)
+    print(odds + evens)
 
 #ex10([10,20,25,30,35],[40,45,60,75,90])
         
