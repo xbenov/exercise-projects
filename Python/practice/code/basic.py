@@ -128,3 +128,63 @@ def ex10(list_o,list_e):
 
 #ex10([10,20,25,30,35],[40,45,60,75,90])
         
+def ex11(n):
+    '''
+    Print digits of int number in reverse
+    '''
+    l = []
+    while(n > 0):
+        l.append(str(n%10))
+        n//=10
+
+    string = ' '.join(l)
+
+    return string
+
+def ex11b(n):
+    return ' '.join(str(n)[::-1])
+
+#print(ex11b(123456))
+
+def ex12(income):
+    '''
+    Income tax
+    '''
+    if income <= 10000:
+        return 0
+    elif (income-10000) <= 10000:
+        return (income-10000)*0.1
+    else:
+        return 1000 + (income - 20000)*0.2
+
+#print(ex12(45000))
+
+def ex13():
+    '''
+    Print multiplication table
+    '''
+    for n in range(1,11):
+        for m in range(1,11):
+            print(f'{n*m:02}',end=' ')
+        print('\n')
+
+#ex13()
+
+def ex14(size):
+    '''
+    Downward triangle using asterisks
+    '''
+    for n in range(size):
+        for m in range(size-n):
+            print('*',end=' ')
+        print('\n')
+
+#ex14(4)
+
+def ex15(base: int,exp: int):
+    '''
+    Calculate exponential value
+    '''
+    return base**exp
+
+print(ex15(5,-1))
